@@ -42,8 +42,43 @@ It estimates the **3D distance** between the hand and mouth by:
 ```bash
 python -m venv .venv
 .venv\Scripts\activate
-
-### 2. Install Dependencies
-
+```
+### 2. Install dependencies
 ```bash
 pip install opencv-python mediapipe numpy
+```
+## Run the Project
+```bash
+python shadow_depth_final.py
+```
+The app opens a window titled “Final Shadow Depth System” and starts your default webcam.
+Press Esc to quit.
+
+🔍 How It Works
+- Detects face and hand landmarks using MediaPipe.
+- Finds the mouth region (bounding box + center).
+- Tracks fingertip (index tip).
+- Measures geometric distance (pixels → cm).
+- Detects shadow in the mouth ROI by comparing observed intensity to a baseline.
+- Creates a shadow intensity heatmap overlay.
+- Combines geometry + shadow physics to estimate final distance.
+- Classifies the action based on thresholds.
+
+🎯 Output
+- Distance shown in cm (final blended estimate).
+- Action label displayed (“None”, “Approaching Mouth”, “Touching Face / Eating”).
+- Heatmap overlay on mouth region (shadow intensity loss).
+- Real-time tracking with fingertip and mouth center visualization.
+
+🌐 Applications
+- Health monitoring (face-touching awareness)
+- Eating/smoking detection
+- Human–computer interaction
+- Behavioral analysis
+- Computer vision research
+
+📹 Demo
+
+
+👩‍💻 Author
+Prathiksha Vasudevan
