@@ -1,4 +1,4 @@
-# Physics-Based Shadow Depth Action Recognition
+# Physics-Based Vision: Shadow Depth Action Recognition
 
 This project detects **hand-to-mouth actions** using a combination of **geometry** and **physics-inspired shadow analysis** instead of relying only on keypoints.  
 
