@@ -54,7 +54,9 @@ python shadow_depth_final.py
 The app opens a window titled “Final Shadow Depth System” and starts your default webcam.
 Press Esc to quit.
 
-🔍 How It Works
+---
+
+## How It Works🔍
 - Detects face and hand landmarks using MediaPipe.
 - Finds the mouth region (bounding box + center).
 - Tracks fingertip (index tip).
@@ -64,21 +66,27 @@ Press Esc to quit.
 - Combines geometry + shadow physics to estimate final distance.
 - Classifies the action based on thresholds.
 
-🎯 Output
+## 🎯 Output
 - Distance shown in cm (final blended estimate).
 - Action label displayed (“None”, “Approaching Mouth”, “Touching Face / Eating”).
 - Heatmap overlay on mouth region (shadow intensity loss).
 - Real-time tracking with fingertip and mouth center visualization.
 
-🌐 Applications
+## 🌐 Applications
 - Health monitoring (face-touching awareness)
 - Eating/smoking detection
 - Human–computer interaction
 - Behavioral analysis
 - Computer vision research
 
-📹 Demo
+## 📹 Demo
+👉 [Watch the YouTube Demo](https://youtu.be/B8xPWeGXofk)
+In the demo, you can see:
+- Mouth region detection
+- Fingertip tracking
+- Distance estimation in centimeters
+- Shadow intensity heatmap overlay
+- Action classification (None, Approaching, Touching Face / Eating)
 
-
-👩‍💻 Author
+## 👩‍💻 Author
 Prathiksha Vasudevan
