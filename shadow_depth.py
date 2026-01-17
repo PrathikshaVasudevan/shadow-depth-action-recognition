@@ -1,7 +1,3 @@
-# Final Shadow Depth System — Physics-based shadow + geometry
-# Requirements: opencv-python, mediapipe, numpy
-# Run: python shadow_depth_final.py
-
 import cv2
 import mediapipe as mp
 import numpy as np
