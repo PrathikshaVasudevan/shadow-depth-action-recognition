@@ -1,5 +1,7 @@
 # Physics-Based Vision: Shadow Depth Action Recognition
 
+This project was developed during the Winter Internship'25 at console.success 
+
 This project detects **hand-to-mouth actions** using a combination of **geometry** and **physics-inspired shadow analysis** instead of relying only on keypoints.  
 
 It estimates the **3D distance** between the hand and mouth by:
